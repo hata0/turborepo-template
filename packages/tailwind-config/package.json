@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint:eslint": "eslint . --ext js,jsx,mjs,ts,tsx,mts,mdx",
+    "fix:eslint": "pnpm lint:eslint --fix",
+    "check-types": "tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,6 +17,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "@repo/eslint-config": "workspace:*",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
