@@ -1,8 +1,11 @@
 {
-  "name": "tailwind-config",
+  "name": "@repo/tailwind-config",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "exports": {
+    "./theme.css": "./src/theme.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
