@@ -1,3 +1,3 @@
 export default function TopPage() {
-  return <div className="text-red-500">hello</div>;
+  return <div className="text-destructive">hello</div>;
 }
